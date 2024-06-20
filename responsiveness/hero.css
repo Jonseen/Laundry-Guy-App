@@ -1,0 +1,532 @@
+.container {
+    background: #2f4fff url(../assets/images/bg-main.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* height: 100vh; */
+    /* height: calc(100vh - 40px); */
+    scroll-timeline-name: --squareTimeline;
+  }
+  
+  .scroll_arrow {
+    position: absolute;
+    width: 6%;
+    display: none;
+    /* rotate: 25deg; */
+    right: 100px;
+    bottom: 50px;
+    z-index: 100;
+  }
+  .scroll_arrow2 {
+    position: absolute;
+    width: 6%;
+    /* rotate: 25deg; */
+    right: 100px;
+    bottom: 20px;
+    z-index: 100;
+  }
+  
+  @keyframes slide-in-bottom {
+    from {
+      top: 0;
+    }
+    to {
+      top: 550px;
+    }
+  }
+  
+  .icon1 {
+    position: absolute;
+    /* width: 2%; */
+    width: 12%;
+    bottom: 100vh;
+    left: 100px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  
+    z-index: 60;
+  }
+  .iconz1 {
+    display: none;
+    position: absolute;
+    /* width: 2%; */
+    width: 14%;
+    bottom: 100vh;
+    left: 200px;
+    animation-name: move-up;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  
+    z-index: 60;
+  }
+  .icon2 {
+    position: absolute;
+    /* width: 2.5%; */
+    width: 14.5%;
+    bottom: 100vh;
+    left: 300px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    z-index: 60;
+  }
+  .iconz2 {
+    display: none;
+    position: absolute;
+    /* width: 2.5%; */
+    width: 14.5%;
+    bottom: 100vh;
+    left: 400px;
+    animation-name: move-up;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    z-index: 60;
+  }
+  .icon3 {
+    position: absolute;
+    /* width: 2%; */
+    width: 14%;
+    bottom: 100vh;
+    left: 700px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .hero-assets{
+      display: block;
+      width: 100vw;
+      height: auto;
+  }
+  .iconz3 {
+    position: absolute;
+    width: 2%;
+    /* width: 12%; */
+    bottom: 100vh;
+    left: 800px;
+    animation-name: move-up;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+  }
+  .icon4 {
+    position: absolute;
+    /* width: 2%; */
+    width: 14%;
+    bottom: 100vh;
+    left: 900px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+  }
+  .iconz4 {
+    position: absolute;
+    width: 2%;
+    /* width: 12%; */
+    bottom: 100vh;
+    left: 1000px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  .icon5 {
+    position: absolute;
+    /* width: 2.5%; */
+    width: 14.5%;
+    bottom: 100vh;
+    left: 1200px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+  .iconz5 {
+    position: absolute;
+    /* width: 2.5%; */
+    width: 10.5%;
+    bottom: 100vh;
+    left: 1300px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+  .icon6 {
+    position: absolute;
+    width: 8%;
+    bottom: 100vh;
+    left: 1400px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  .iconz6 {
+    position: absolute;
+    width: 4%;
+    bottom: 100vh;
+    left: 1400px;
+    animation-name: move-up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes move-up {
+    from {
+      bottom: 0;
+    }
+  
+    to {
+      bottom: 1000px;
+    }
+  }
+  
+  .header {
+    display: flex;
+    padding-block: 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    /* padding: 10px 10px; */
+  }
+  
+  .header .logo img {
+    width: 140px;
+  }
+  
+  
+  @keyframes move-in-top {
+    from {
+      padding: 0 0;
+    }
+  
+    to {
+      padding: 30px 0;
+    }
+  }
+  
+  .header .nav-links a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 35px 0px;
+    padding: 10px 10px;
+    border-radius: 15px;
+  }
+  .header .nav-links a:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  .header .nav-links {
+    display: none;
+  }
+  
+  .bars div {
+    width: 24px;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+    margin: 4px 0;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  
+  .hero .hero-text .hero-text-p {
+    display: block;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 0.5em;
+    color: antiquewhite;
+  }
+  
+  .hero .hero-text small {
+    color: antiquewhite;
+    font-size: 16px;
+    text-align: center;
+    margin-block: 20px;
+    display: block;
+    line-height: 25px;
+  }
+  
+  .hero .hero-image {
+    width: 280px;
+    position: relative;
+    background-color: antiquewhite;
+    margin: 40px auto;
+    border-radius: 50px;
+  }
+  .hero .hero-image img {
+    display: block;
+    width: 280px;
+  }
+  
+  .phone {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    display: none;
+    right: 13rem;
+    transform: rotate(6deg);
+    z-index: 5;
+  }
+  
+  .phonecaseview {
+    display: none;
+  }
+  
+  @keyframes move-in-right {
+    from {
+      right: 0;
+    }
+  
+    to {
+      right: 15rem;
+    }
+  }
+  .stores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .app-store {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 5px 25px 5px 5px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  .app-store:hover {
+    border-color: white;
+  }
+  
+  /* mobile and tab for apple logo */
+  .app-store .apple-icon svg {
+    width: 40px;
+  }
+  
+  .app-store .apple-icon-text {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .app-store .apple-icon-text p:first-child {
+    opacity: 0.4;
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+  
+  .app-store .apple-icon-text p:last-child {
+    font-size: 20px;
+  }
+  
+  .playstore {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 5px 25px 5px 5px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  .playstore:hover {
+    border-color: white;
+  }
+  
+  .playstore .playstore-icon svg {
+    padding-left: 4px;
+    width: 40px;
+  }
+  
+  .playstore .playstore-icon-text {
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .playstore .playstore-icon-text p:first-child {
+    opacity: 0.4;
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+  
+  .playstore .playstore-icon-text p:last-child {
+    font-size: 20px;
+  }
+
+
+  /* media queries */
+  
+/* media queries */
+@media (min-width: 475px) {
+    .hero .hero-text {
+      height: 400px;
+    }
+  
+    .hero .hero-image {
+      transform: rotate(6deg);
+    }
+  }
+  @media (min-width: 640px) {
+    .stores {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .hero .hero-text .hero-text-p {
+      font-size: 60px;
+    }
+  
+    .phone {
+      display: none;
+      animation: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .header .nav-links {
+      display: block;
+    }
+  
+    .header .bars {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 890px) {
+    .hero .hero-text {
+      height: 300px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero {
+      align-items: center;
+      width: 100%;
+      position: relative;
+      flex-direction: row;
+    }
+  
+    .scroll_arrow{
+      display: block;
+    }
+  
+    .container {
+      height: auto;
+    }
+  
+    .hero .hero-text {
+      width: 60%;
+      height: 550px;
+    }
+  
+    .hero .hero-text .hero-text-p {
+      font-size: 80px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .stores {
+      justify-content: left;
+    }
+  
+    .hero .hero-text small {
+      font-size: 18px;
+      text-align: left;
+      margin: 40px 0 40px 0;
+      width: 70%;
+    }
+  
+    .hero .hero-image {
+      position: relative;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+  
+    .hero .hero-image::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      z-index: -1;
+      border-radius: 500px;
+      background: antiquewhite;
+    }
+  
+    .hero img {
+      z-index: 1000;
+      display: block;
+    }
+  
+    .stores {
+      gap: 15px;
+    }
+  
+    .hero .hero-image img .phonecase {
+      display: none;
+    }
+  
+    .icon1 {
+      width: 2%;
+    }
+  
+    .iconz1 {
+      width: 2%;
+    }
+  
+    .icon2 {
+      width: 2.5%;
+    }
+  
+    .iconz2 {
+      width: 2.5%;
+    }
+  
+    .icon3 {
+      width: 2%;
+    }
+  
+    .icon6{
+      width: 5%;
+    }
+  
+  
+  }
+  
