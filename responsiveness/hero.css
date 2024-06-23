@@ -18,14 +18,7 @@
     bottom: 50px;
     z-index: 100;
   }
-  .scroll_arrow2 {
-    position: absolute;
-    width: 6%;
-    /* rotate: 25deg; */
-    right: 100px;
-    bottom: 20px;
-    z-index: 100;
-  }
+
   
   @keyframes slide-in-bottom {
     from {
@@ -264,6 +257,7 @@
     font-size: 52px;
     text-align: center;
     margin-top: 0.5em;
+    
     color: antiquewhite;
   }
   

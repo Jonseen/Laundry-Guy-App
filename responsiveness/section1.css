@@ -1,0 +1,93 @@
+.section .section-text {
+    font-size: 25px;
+    position: relative;
+    padding: 24px 0;
+    color: #081038;
+    font-size: 16px;
+    /* width: 30%; */
+    /* margin: 0 auto; */
+    /* margin: 3em auto 2em auto; */
+    text-align: center;
+    line-height: 24px;
+    /* line-height: 40px; */
+  }
+  
+  /* @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+  
+  .section .we-understand {
+    font-size: 52px;
+    font-weight: 200;
+    margin: 0.5em auto;
+    color: #081038;
+    text-align: center;
+  }
+  
+  .section .help {
+    font-size: 20px;
+    color: #081038;
+    /* width: 40%; */
+    margin: 1em auto 1em auto;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .section .spring {
+    position: absolute;
+    width: 3%;
+    top: 30px;
+    display: none;
+    /* top: 300px; */
+    right: 15%;
+    transform: rotate(30deg);
+  }
+  .section .spring2 {
+    position: absolute;
+    width: 3%;
+    top: 30px;
+    display: none;
+    left: 15%;
+    /* top: 300px; */
+    /* left: 37%; */
+    transform: rotate(-30deg);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  /* media queries */
+  @media (min-width:620px) {
+    .section .spring,
+    .section .spring2{
+        display: block;
+    }
+
+    .section .section-text{
+        width: 60%;
+        margin: 0 auto;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .section .section-text{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .section .we-understand{
+    font-size: 60px;
+    width: 60%;
+    }
+
+    .section .help{
+     width: 40%;
+    margin: 3em auto 3em auto;
+    }
+  }

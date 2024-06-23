@@ -1,0 +1,198 @@
+
+.stores1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+  }
+  
+  .app-store1 {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 10px 50px 10px 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .app-store1 .apple-icon-text {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .app-store1 .apple-icon-text p:first-child {
+    opacity: 0.4;
+    /* padding-bottom: 5px; */
+  }
+  
+  .app-store1 .apple-icon-text p:last-child {
+    font-size: 1.2em;
+  }
+  
+  .playstore1 {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 10px 50px 10px 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .playstore1 .playstore-icon-text {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .playstore1 .playstore-icon-text p:first-child {
+    opacity: 0.4;
+  }
+  
+  .playstore1 .playstore-icon-text p:last-child {
+    font-size: 1.2em;
+  }
+
+
+  /* hover effect on cta btn fo section 2 */
+  .app-store1:hover, 
+  .playstore1:hover{
+    border-color: white;
+  }
+  
+  .hero1 .text .new-levels {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0;
+    color: #ffffff9e;
+    line-height: 30px;
+  }
+
+  .hero1 {
+  background-color: #2f4fff;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: none;
+  background-size: 35%;
+  position: relative;
+  border-radius: 20px;
+  margin: 3em auto;
+}
+
+.hero1 .text .main-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+/* .hero1::before {
+  content: "";
+  width: 0%;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  z-index: -1;
+  background-color: #081038;
+  border-radius: 5px 5px 20px 20px;
+  transition: all 2s ease;
+}
+
+.hero1:hover::before {
+  width: 76%;
+} */
+
+.hero1 .text {
+    padding: 25px 10px;
+  }
+
+  .container1 {
+    position: relative;
+    width: 100vw;
+    background-color: #ffffff;
+  }
+
+
+  .scroll_arrow2 {
+    display: none;
+    position: absolute;
+    width: 6%;
+    -webkit-transform: rotate(25deg);
+    transform:rotate(25deg);
+    right: 100px;
+    bottom: 20px;
+    z-index: 100;
+  }
+
+
+  /* media queries */
+  @media (min-width:475px) {
+    .hero1 .text .main-text{
+        font-size: 40px;
+    }
+  }
+
+
+  @media (min-width:640px) {
+    .hero1 .text .main-text{
+      font-size: 50px;
+    line-height: 65px;
+    }
+
+    .scroll_arrow2{
+    display: block;
+    }
+
+    .hero1{
+    transform: rotate(1deg);
+    width: 80%;
+    }
+    
+  }
+
+  @media (min-width:890px) {
+    .stores1{
+      flex-direction: row;
+    }
+
+    .app-store1,
+    .playstore1{
+      width: 40%;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .hero1 .text .new-levels{
+      padding: 50px 0;
+      width: 70%;
+      }
+     
+      .app-store1 .apple-icon-text p:first-child {
+        padding-bottom: 5px;
+      }
+  
+      .playstore1 .playstore-icon-text p:first-child {
+        padding-bottom: 5px;
+      }
+  
+      .hero1{
+      background-image:url(../assets/icons/favicon2.png);
+      background-repeat: no-repeat;
+      background-size: 25%;
+      background-position: center right;
+    }
+
+  
+      .hero1 .text{
+      padding: 50px 100px;
+  
+      }
+  
+ 
+  
+      .hero1 .text .main-text{
+        line-height: 65px;
+    }
+  
+  }

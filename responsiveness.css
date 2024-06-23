@@ -51,7 +51,7 @@
     }
   }
   
-  @media (min-width:1568px) {
+  @media (min-width:1400px) {
     .frame{
       max-width: 1568px;
     }

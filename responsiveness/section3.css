@@ -1,0 +1,154 @@
+.container3 {
+    width: 100vw;
+    background-color: #ffffff;
+  }
+  
+  .hero3 {
+    background: #081038 url(../assets/images/phone.png);
+    background-repeat: no-repeat;
+    background-image: none;
+    border-radius: 20px;
+    margin: 3em auto;
+  }
+  
+  .hero3 .text {
+    padding: 25px 10px;
+    /* padding: 50px 100px; */
+    /* width: 75%; */
+  }
+  
+  .hero3 .text .main-text {
+    /* font-size: 50px; */
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    /* line-height: 65px; */
+  }
+  
+  .hero3 .text .new-levels {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0;
+    /* padding: 50px 0; */
+    color: #ffffff9e;
+    line-height: 30px;
+    /* width: 70%; */
+  }
+  
+  .stores3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* gap: 30px; */
+    gap: 10px;
+  }
+  
+  .app-store3 {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 10px 50px 10px 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .app-store3 .apple-icon-text {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .app-store3 .apple-icon-text p:first-child {
+    opacity: 0.4;
+    padding-bottom: 5px;
+  }
+  
+  .app-store3 .apple-icon-text p:last-child {
+    font-size: 1.2em;
+  }
+  
+  .playstore3 {
+    display: flex;
+    justify-content: left;
+    border: 2px solid #ffffff75;
+    border-radius: 25px;
+    padding: 10px 50px 10px 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .playstore3 .playstore-icon-text {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .playstore3 .playstore-icon-text p:first-child {
+    opacity: 0.4;
+    padding-bottom: 5px;
+  }
+  
+  .playstore3 .playstore-icon-text p:last-child {
+    font-size: 1.2em;
+  }
+
+    /* hover effect on cta btn fo section 2 */
+    .app-store3:hover, 
+    .playstore3:hover{
+      border-color: white;
+    }
+  
+
+
+  /* media queries */
+  @media (min-width:475px) {
+    .hero3 .text .main-text {
+      font-size: 40px;
+    }
+  }
+
+
+  @media (min-width:640px) {
+    .hero3 .text .main-text {
+      font-size: 50px;
+      line-height: 65px;
+  }
+
+  .hero3{
+    transform: rotate(-1deg);
+    width: 80%;
+  }
+
+  }
+
+  @media (min-width: 890px) {
+    .stores3{
+      flex-direction: row;
+    }
+
+    .app-store3,
+    .playstore3{
+      width: 40%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero3 .text {
+        padding: 50px 100px;
+    }
+
+    .hero3{
+    background-position: top right;
+    background-size: 25%;
+    width: 80%;
+      background-image: url(../assets/images/phone.png);
+    }
+
+    @media (min-width: 1024px) {
+      .hero3 .text .new-levels {
+          padding: 50px 0;
+          width: 70%;
+      }
+  }
+}
