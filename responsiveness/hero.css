@@ -185,7 +185,13 @@
     animation-delay: 5s;
     animation-iteration-count: infinite;
   }
+
+  .bars svg{
+    width: 24px;
+    fill: white;
+  }
   
+
   @keyframes move-up {
     from {
       bottom: 0;

@@ -81,4 +81,93 @@ html {
 } */
 
 
+/* mobile nav */
+.menubarnav{
+  display: none;
+}
 
+.menubarnav.active{
+  background: #2f4fff;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 300;
+}
+
+.menubarnav.active ul li{
+  padding: 20px 0;
+}
+
+.menubarnav.active ul li a{
+  color: white;
+  font-size: 20px;
+}
+
+.menubarnav.active .close-bar{
+  position: absolute;
+  top: 16px;
+  right: 2vw;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.close-bar svg{
+  fill: white;
+  width: 30px;
+}
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: opacity 1s, visibility 1s;
+}
+
+.loader-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after{
+  content: '';
+  width: 32px;
+  height: 32px;
+  border: 8px solid #dddddd;
+  border-top-color: #2f4fff;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  from{
+    transform: rotate(0turn);
+  }
+
+  to{
+    transform: rotate(1turn);
+  }
+}
+
+
+
+/* media queries */
+@media (min-width:768px) {
+  .menubarnav.active{
+    display: none;
+  }
+}
