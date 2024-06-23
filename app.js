@@ -18,3 +18,38 @@ const section_ids = [
   });
 // }
 
+    
+let brs = document.getElementById("bars");//for the bars
+
+let menu = brs.addEventListener("click", ()=>{
+    let menu_cnt = document.querySelector(".menubarnav");
+    localStorage.setItem.menu_cnt.classList.add("active");
+
+    // let mount = document.getElementById("body");
+    // mount.classList.toggle("stick");
+  
+
+
+// accordion
+    let accordioncloser = document.querySelector(".close-bar");
+    let closeaccordion = accordioncloser.addEventListener("click", ()=>{
+        menu_cnt.classList.remove("active");
+    });
+  });
+
+
+
+  // loader
+
+  window.addEventListener("load", ()=>{
+    const loader = document.querySelector(".loader");
+
+    //extra time to avoid extra loading of pictures after page loads
+    setTimeout(() => {
+      loader.classList.add("loader-hidden");
+    }, 1000);
+
+    loader.addEventListener("transitionend", ()=>{
+      document.body.removeChild("loader-hidden");
+    });
+  });
