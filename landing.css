@@ -140,6 +140,7 @@ html {
 
 .loader-hidden{
   opacity: 0;
+  display: none;
   visibility: hidden;
 }
 
