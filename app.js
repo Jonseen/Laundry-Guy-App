@@ -23,7 +23,7 @@ let brs = document.getElementById("bars");//for the bars
 
 let menu = brs.addEventListener("click", ()=>{
     let menu_cnt = document.querySelector(".menubarnav");
-    localStorage.setItem.menu_cnt.classList.add("active");
+    menu_cnt.classList.add("active");
 
     // let mount = document.getElementById("body");
     // mount.classList.toggle("stick");
